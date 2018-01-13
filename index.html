@@ -1,0 +1,43 @@
+<head>
+	<link rel="stylesheet" type="text/css" href="UI/UI.css">
+	<link rel="stylesheet" type="text/css" href="RPJE.css">
+
+	<script type='text/javascript' src='Libs/stats.js'></script>
+	<script type='text/javascript' src='Libs/jquery-3.2.1.min.js'></script>
+	<script type="text/javascript" src="Other/PairStruct.js"></script>
+
+	<script type="text/javascript" src="Engine/Map.js"></script>
+	<script type="text/javascript" src="Display/DisplayManager.js"></script>
+	<script type="text/javascript" src="Engine/Engine.js"></script>
+
+	<script type="text/javascript" src="Other/RPJE_Tools.js"></script>
+
+	<script type="text/javascript" src="RPJE.js"></script>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+</head>
+
+<body onload="main()">
+	<canvas id="Game" class="NoCanvasAntialias">	</canvas>
+
+	Select Tile and click on cavas to edit map
+
+	<hr color="">
+
+		<div id="tiles1"></div>
+
+	<hr color="">
+
+		<div id="tiles2"></div>
+
+	<hr color="">
+
+	<button onclick="JsonExport()">JSON Export</button>
+
+	</br>
+
+	<textarea id="json_output" rows="4" cols="50" style="width: 100%"></textarea>
+
+
+</body>
