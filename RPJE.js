@@ -42,7 +42,13 @@ function main()
 
 	RPJE_GetEngine().displayManager.loadTile("Assets/World/plant.png", 6, true);
 
-	RPJE_GetEngine().currentMap.randomizeMapGround(0,5);
+	RPJE_GetEngine().displayManager.loadTile("Assets/World/ground_indoor.png", 7, true);
+	RPJE_GetEngine().displayManager.loadTile("Assets/World/ground_indoor2.png", 8, true);
+
+	RPJE_GetEngine().displayManager.loadTile("Assets/World/black.png", 99, true);
+
+	//Ground Tiles are going from 0 to 5, we want a random ground
+	//RPJE_GetEngine().currentMap.randomizeMapGround(7,7);
 
 	//Map objects ( you can't walk on Map Objects)
 	RPJE_GetEngine().displayManager.loadTile("Assets/Objects/sign.png", 0, false); //Sign
@@ -58,6 +64,19 @@ function main()
 	RPJE_GetEngine().displayManager.loadTile("Assets/World/Rock9.png", 9, false);
 
 	RPJE_GetEngine().displayManager.loadTile("Assets/Objects/woodsticks.png", 10, false);
+
+	RPJE_GetEngine().displayManager.loadTile("Assets/Objects/indoor_furniture_small_1.png", 11, false);
+	RPJE_GetEngine().displayManager.loadTile("Assets/Objects/indoor_furniture_small_2.png", 12, false);
+
+
+	RPJE_GetEngine().displayManager.loadTile("Assets/Objects/indoor_furniture_TV_1.png", 13, false);
+	RPJE_GetEngine().displayManager.loadTile("Assets/Objects/indoor_furniture_TV_2.png", 14, false);
+	RPJE_GetEngine().displayManager.loadTile("Assets/Objects/indoor_furniture_TV_3.png", 15, false);
+	RPJE_GetEngine().displayManager.loadTile("Assets/Objects/indoor_furniture_TV_4.png", 16, false);
+
+	RPJE_GetEngine().displayManager.loadTile("Assets/World/black.png", 99, false);
+
+
 
 
 	//world and maps JSON format
@@ -106,7 +125,7 @@ function main()
 
 	});
 
-	console.log(RPJE_GetEngine().currentMap.exportJSON());
+
 
 
 }
